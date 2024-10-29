@@ -1,0 +1,19 @@
+{
+  "name": "kppl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "white box test",
+    "unit test",
+    "jest test"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Learn white box test",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
