@@ -1,50 +1,45 @@
-const {
-  sum,
-  isOdd,
-  isEven,
-  isPrime,
-  kabataku,
-  factorial,
-} = require("../src/utils");
+const Utils = require("../src/utils");
 
 describe("test utils", () => {
+  const utils = new Utils();
+
   test("sum: a + b", () => {
-    expect(sum(1, 2)).toBe(3);
-    expect(sum(2, 5)).toBe(7);
-    expect(sum(3, 2)).not.toBe(6);
+    expect(utils.sum(1, 2)).toBe(3);
+    expect(utils.sum(2, 5)).toBe(7);
+    expect(utils.sum(3, 2)).not.toBe(6);
   });
 
   test("isOdd", () => {
-    expect(isOdd(3)).toBeTruthy();
-    expect(isOdd(5)).toBeTruthy();
-    expect(isOdd(13)).toBeTruthy();
-    expect(isOdd(4)).toBeFalsy();
+    expect(utils.isOdd(3)).toBeTruthy();
+    expect(utils.isOdd(5)).toBeTruthy();
+    expect(utils.isOdd(13)).toBeTruthy();
+    expect(utils.isOdd(4)).toBeFalsy();
   });
 
   test("isEven", () => {
-    expect(isEven(4)).toBeTruthy();
-    expect(isEven(10)).toBeTruthy();
-    expect(isEven(22)).toBeTruthy();
-    expect(isEven(3)).toBeFalsy();
+    expect(utils.isEven(4)).toBeTruthy();
+    expect(utils.isEven(10)).toBeTruthy();
+    expect(utils.isEven(22)).toBeTruthy();
+    expect(utils.isEven(3)).toBeFalsy();
   });
 
   test("isPrime", () => {
-    expect(isPrime(2)).toBeTruthy();
-    expect(isPrime(5)).toBeTruthy();
-    expect(isPrime(17)).toBeTruthy();
-    expect(isPrime(1)).toBeFalsy();
-    expect(isPrime(27)).toBeFalsy();
+    expect(utils.isPrime(2)).toBeTruthy();
+    expect(utils.isPrime(5)).toBeTruthy();
+    expect(utils.isPrime(17)).toBeTruthy();
+    expect(utils.isPrime(1)).toBeFalsy();
+    expect(utils.isPrime(27)).toBeFalsy();
   });
 
   test("kabataku", () => {
-    expect(kabataku(5)).toBe(5);
-    expect(kabataku(3)).toBe(3);
-    expect(kabataku(2)).not.toBe(3);
+    expect(utils.kabataku(5)).toBe(5);
+    expect(utils.kabataku(3)).toBe(3);
+    expect(utils.kabataku(2)).not.toBe(3);
   });
 
   test("factorial", () => {
-    expect(factorial(5)).toBe(120);
-    expect(factorial(4)).toBe(24);
-    expect(factorial(7)).not.toBe(720);
+    expect(utils.factorial(5)).toBe(120);
+    expect(utils.factorial(4)).toBe(24);
+    expect(utils.factorial(7)).not.toBe(720);
   });
 });

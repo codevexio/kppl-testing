@@ -1,40 +1,34 @@
-function sum(a, b) {
-  return a + b;
-}
-
-function isOdd(num) {
-  return num % 2 !== 0;
-}
-
-function isEven(num) {
-  return num % 2 === 0;
-}
-
-function isPrime(num) {
-  if (num == 2) return true;
-  if (num <= 1 || isEven(num)) return false;
-
-  for (let i = 3; i <= Math.sqrt(num); i += 2) {
-    if (num % i === 0) return false;
+class Utils {
+  sum(a, b) {
+    return a + b;
   }
 
-  return true;
+  isOdd(num) {
+    return num % 2 !== 0;
+  }
+
+  isEven(num) {
+    return num % 2 === 0;
+  }
+
+  isPrime(num) {
+    if (num <= 1 || (this.isEven(num) && num !== 2)) return false;
+
+    for (let i = 3; i <= Math.sqrt(num); i += 2) {
+      return num % i !== 0;
+    }
+
+    return true;
+  }
+
+  kabataku(num) {
+    return num + (num * num) / num - num;
+  }
+
+  factorial(num) {
+    if (num <= 1) return 1;
+    return num * this.factorial(num - 1);
+  }
 }
 
-function kabataku(num) {
-  return num + num * num / num - num;
-}
-
-function factorial(num) {
-  if (num <= 1) return 1
-  return num * factorial(num - 1)
-}
-
-module.exports = {
-  sum,
-  isOdd,
-  isEven,
-  isPrime,
-  kabataku,
-  factorial,
-};
+module.exports = Utils;
