@@ -12,17 +12,18 @@ class Utils {
   }
 
   isPrime(num) {
-    if (num <= 1 || (this.isEven(num) && num !== 2)) return false;
+    if (num <= 1 || (this.isEven(num) && num !== 2))
+      return false;
 
     for (let i = 3; i <= Math.sqrt(num); i += 2) {
-      return num % i !== 0;
+      if (num % i === 0) return false;
     }
 
     return true;
   }
 
   kabataku(num) {
-    return num + (num * num) / num - num;
+    return num + num * num / num - num;
   }
 
   factorial(num) {

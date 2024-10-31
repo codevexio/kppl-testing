@@ -6,7 +6,7 @@ describe("test utils", () => {
   test("sum: a + b", () => {
     expect(utils.sum(1, 2)).toBe(3);
     expect(utils.sum(2, 5)).toBe(7);
-    expect(utils.sum(3, 2)).not.toBe(6);
+    expect(utils.sum(3, 2)).not.toBe(6);  // should be 5
   });
 
   test("isOdd", () => {
@@ -34,12 +34,12 @@ describe("test utils", () => {
   test("kabataku", () => {
     expect(utils.kabataku(5)).toBe(5);
     expect(utils.kabataku(3)).toBe(3);
-    expect(utils.kabataku(2)).not.toBe(3);
+    expect(utils.kabataku(2)).not.toBe(3);  // should be 2
   });
 
   test("factorial", () => {
     expect(utils.factorial(5)).toBe(120);
     expect(utils.factorial(4)).toBe(24);
-    expect(utils.factorial(7)).not.toBe(720);
+    expect(utils.factorial(7)).not.toBe(720); // should be 5040
   });
 });

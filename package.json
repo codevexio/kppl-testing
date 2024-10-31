@@ -1,18 +1,18 @@
 {
   "name": "kppl",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
+  "description": "Learn white box test",
+  "author": "https://github.com/codevexio",
   "keywords": [
     "white box test",
     "unit test",
     "jest test"
   ],
-  "author": "",
+  "version": "1.0.0",
   "license": "ISC",
-  "description": "Learn white box test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "jest": "^29.7.0"
   }
