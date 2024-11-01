@@ -1,11 +1,12 @@
 {
-  "name": "kppl",
+  "name": "kppl-testing",
   "description": "Learn white box test",
-  "author": "https://github.com/codevexio",
+  "author": "https://github.com/hibatillah",
   "keywords": [
+    "testing",
     "white box test",
     "unit test",
-    "jest test"
+    "jest"
   ],
   "version": "1.0.0",
   "license": "ISC",

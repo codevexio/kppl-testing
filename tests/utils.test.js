@@ -1,6 +1,6 @@
 const Utils = require("../src/utils");
 
-describe("test utils", () => {
+describe("test some utils", () => {
   const utils = new Utils();
 
   test("sum: a + b", () => {

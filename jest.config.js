@@ -1,5 +1,5 @@
 const config = {
-  testMatch: ["**/test/**/*.test.js"],
+  testMatch: ["**/tests/**/*.test.js"],
   verbose: true,
 };
 
