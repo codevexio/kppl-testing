@@ -10,7 +10,7 @@ Install dependencies
 npm install
 ```
 
-Run the tests. Tests driver are located in the `/test` directory.
+Run the tests. Tests driver are located in the `/tests` directory.
 
 ```bash
 npm test
